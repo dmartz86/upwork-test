@@ -12,3 +12,5 @@ dependencies:
 test:
   override:
     - docker-compose -f docker-compose.yml -f docker-compose.test.yml up -d
+      environment:
+        MOCHA_FILE: $CIRCLE_TEST_REPORTS/junit/test-results.xml
