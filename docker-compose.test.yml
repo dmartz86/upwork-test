@@ -1,0 +1,19 @@
+version: '2.0'
+
+services:
+  komed-test-integration:
+    image: borntraegermarc/komed-test-integration
+    container_name: komed-test-integration
+    build:
+      context: .
+      dockerfile: Dockerfile.test.integration
+    depends_on:
+      - komed-app
+      - komed-mongo
+    volumes:
+      - .:/home/app
+    environment:
+      - HOST_URL=komed-app
+      - HOST_PORT=5001
+      - MONGO_HOST=komed-mongo
+      - MONGO_DATABASE=komed-health

@@ -1,0 +1,45 @@
+{
+  "login": {
+    "title": "Login",
+    "condensedTitle": "Login into Komed Health"
+  },
+  "register": {
+    "title": "Register",
+    "condensedTitle": "Register for Komed Health",
+    "userInfo": "Fill in your user info to get started",
+    "accountText": "Already have an account?",
+    "success": "Successfully registered. Please log in...",
+    "username": {
+      "label": "Username",
+      "required": "Needs to be at least two letters",
+      "invalid": "Too short and please don't use letters like 'äöü'",
+      "taken": "Already in use"
+    },
+    "displayName": {
+      "label": "Display name"
+    },
+    "email": {
+      "label": "E-Mail",
+      "invalid": "Please provide a valid E-Mail",
+      "taken": "Already in use"
+    },
+    "firstName": {
+      "label": "First name"
+    },
+    "lastName": {
+      "label": "Last name"
+    },
+    "password": {
+      "label": "Password",
+      "invalid": "Needs to be at least eight letters",
+      "confirmed": "Passwords do not match"
+    },
+    "passwordConfirm": {
+      "label": "Confirm your password"
+    },
+    "errors": {
+      "required": "This field is required",
+      "error": "Error"
+    }
+  }
+}

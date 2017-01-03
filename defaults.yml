@@ -1,0 +1,54 @@
+xmpp:
+  enable: true
+  roomCreation: false
+  debug:
+    handled: false
+    unhandled: false
+  port: 5222
+  domain: localhost:5000
+  username: node # node / full
+  tls:
+    enable: false
+    key: ./server.key
+    cert: ./server.crt
+
+secrets:
+  cookie: secretsauce
+
+files:
+  enable: false
+  provider: local
+  maxFileSize: 100000000
+  restrictTypes: true
+  allowedTypes:
+    - 'image/jpeg'
+    - 'image/png'
+    - 'image/gif'
+  local:
+    dir: uploads
+
+auth:
+  throttling:
+    enable: true
+    threshold: 3
+  providers: [local] # [local, kerberos, ldap] - You can specify the order
+  local:
+    enableRegistration: true
+    passwordRegex: ^.{8,64}$
+
+private:
+  enable: false
+  roster: online # online / all
+  expire: 360 # false or number of minutes
+
+giphy:
+  enable: true
+  rating: pg-13
+  limit: 24
+  apiKey: dc6zaTOxFJmzC
+
+rooms:
+  private: false
+
+i18n:
+  locale: en

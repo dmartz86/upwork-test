@@ -1,0 +1,20 @@
+{
+  "defaultEnv": "dev",
+  "dev": {
+    "driver": "mongodb",
+    "database": "komed-health",
+    "host": "localhost"
+  },
+
+  "test": {
+    "driver": "mongodb",
+    "database": "komed-health",
+    "host": "localhost"
+  },
+
+  "prod": {
+    "driver": "mongodb",
+    "database": "komed-health",
+    "host": "localhost"
+  }
+}
