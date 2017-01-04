@@ -12,6 +12,7 @@ services:
       - komed-mongo
     volumes:
       - .:/home/app
+      - $CIRCLE_TEST_REPORTS:/circle_artifacts
     environment:
       - HOST_URL=komed-app
       - HOST_PORT=5001
